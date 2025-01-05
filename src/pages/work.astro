@@ -1,3 +1,198 @@
+---
+import Card from '../components/Card.astro';
+const projects = [
+    {
+        link     :"https://www.brandoptics.com/meet-in-the-wild?hsLang=en",
+        imgSrc   :"https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp",
+        imgAlt   :"Frame 1686560322",
+        imgWidth :1700,
+        imgHeight:1408,
+        heading  :"Meet in the wild",
+        description:"Website",
+    },
+    {
+        link: "https://www.brandoptics.com/cyl?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/cyl.webp",
+        imgAlt: "cyl",
+        imgWidth: 852,
+        imgHeight: 704,
+        heading: "CYL",
+        description: "Website"
+    },
+    {
+        link: "https://www.brandoptics.com/xficient?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp",
+        imgAlt: "xfcient",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "Xficient",
+        description: "Product Design"
+    },
+    {
+        link: "https://www.brandoptics.com/mount-up-media?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp",
+        imgAlt: "mountupmedia",
+        imgWidth: 852,
+        imgHeight: 704,
+        heading: "Mount Up Media",
+        description: "Website"
+    },
+    {
+        link: "https://www.brandoptics.com/groove-control-studios?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/GSC.webp",
+        imgAlt: "GSC",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "Groove Control Studio",
+        description: "Website, Logo"
+    },
+    {
+        link: "https://www.brandoptics.com/style-forward?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp",
+        imgAlt: "styleforward",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "STYL/FWRD",
+        description: "Website"
+    },
+    {
+        link: "https://www.brandoptics.com/edgc?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=852&height=704&name=edgc-1.webp",
+        imgAlt: "Live Relentless",
+        imgWidth: 852,
+        imgHeight: 704,
+        heading: "Live Relentless",
+        description: "Logo"
+    },
+    {
+        link: "https://www.brandoptics.com/main-street-annex?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=852&height=704&name=mainstreet.webp",
+        imgAlt: "Main Street Annex",
+        imgWidth: 852,
+        imgHeight: 704,
+        heading: "Main Street Annex",
+        description: "Website, Logo"
+    },
+    {
+        link: "https://www.brandoptics.com/mck-restaurant?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=850&height=704&name=MCKrestuarant.webp",
+        imgAlt: "MCK",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "MCK",
+        description: "Website"
+    },
+    {
+        link: "https://www.brandoptics.com/guardian-healthlink?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=850&amp;height=704&amp;name=guardianhealth.webp",
+        imgAlt: "Guardian HealthLink",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "Guardian HealthLink",
+        description: "Website, Branding"
+    },
+    {
+        link: "https://www.brandoptics.com/market-by-winnies?hsLang=en",
+        imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=850&amp;height=704&amp;name=winnies%20market.webp",
+        imgAlt: "Market By Winnies",
+        imgWidth: 850,
+        imgHeight: 704,
+        heading: "Market By Winnies",
+        description: "Website, Branding"
+    },
+    {
+    link: "https://www.brandoptics.com/cs-kitchen?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp",
+    imgAlt: "CS Kitchen",
+    imgWidth: 850,
+    imgHeight: 704,
+    heading: "CS Kitchen",
+    description: "Website, Logo"
+},
+{
+    link: "https://www.brandoptics.com/saf-salt?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp",
+    imgAlt: "SafSalt",
+    imgWidth: 850,
+    imgHeight: 704,
+    heading: "SafSalt",
+    description: "Website, Logo, Label"
+},
+{
+    link: "https://www.brandoptics.com/splish-naturals?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/splish.webp",
+    imgAlt: "Splish Naturals",
+    imgWidth: 850,
+    imgHeight: 704,
+    heading: "Splish Naturals",
+    description: "Website, Logo"
+},
+{
+    link: "https://www.brandoptics.com/emgenex?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp",
+    imgAlt: "Frame 1686559932",
+    imgWidth: 1302,
+    imgHeight: 1072,
+    heading: "Emgenex",
+    description: "Product Design"
+},
+{
+    link: "https://www.brandoptics.com/winnies-restaurant?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp",
+    imgAlt: "winniesmanayunk",
+    imgWidth: 850,
+    imgHeight: 704,
+    heading: "Winnie's",
+    description: "Website"
+},
+{
+    link: "https://www.brandoptics.com/twisted-gingers?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp",
+    imgAlt: "twisted-b",
+    imgWidth: 852,
+    imgHeight: 704,
+    heading: "Twisted Gingers",
+    description: "Media"
+},
+{
+    link: "https://www.brandoptics.com/studio-alchemy?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp",
+    imgAlt: "Studio alchemy-1",
+    imgWidth: 852,
+    imgHeight: 704,
+    heading: "Studio Alchemy",
+    description: "Website, Logo"
+  },
+  {
+    link: "https://www.brandoptics.com/esaradhi?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp",
+    imgAlt: "esaradhi",
+    imgWidth: 852,
+    imgHeight: 704,
+    heading: "eSaradhi",
+    description: "Digital Product, Logo"
+  },
+  {
+    link: "https://www.brandoptics.com/madabolic?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp",
+    imgAlt: "Frame 1686560391 (2)",
+    imgWidth: 1275,
+    imgHeight: 1056,
+    heading: "Madabolic",
+    description: "Media"
+  },
+  {
+    link: "https://www.brandoptics.com/cheek?hsLang=en",
+    imgSrc: "https://www.brandoptics.com/hs-fs/hubfs/cheek.webp",
+    imgAlt: "cheek",
+    imgWidth: 850,
+    imgHeight: 704,
+    heading: "Cheek",
+    description: "Logo"
+  }
+];
+---
+
  <head> 
   <meta charset="utf-8"> 
   <title>brandOptics | Works</title> 
@@ -98,48 +293,6 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
   }
 }
 </style> 
-  <!--  Added by GoogleAnalytics4 integration --> 
-  <script>
-var _hsp = window._hsp = window._hsp || [];
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-
-var useGoogleConsentModeV2 = true;
-var waitForUpdateMillis = 1000;
-
-
-if (!window._hsGoogleConsentRunOnce) {
-  window._hsGoogleConsentRunOnce = true;
-
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'wait_for_update': waitForUpdateMillis
-  });
-
-  if (useGoogleConsentModeV2) {
-    _hsp.push(['useGoogleConsentModeV2'])
-  } else {
-    _hsp.push(['addPrivacyConsentListener', function(consent){
-      var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
-      var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
-
-      gtag('consent', 'update', {
-        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
-        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
-        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
-        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
-      });
-    }]);
-  }
-}
-
-gtag('js', new Date());
-gtag('set', 'developer_id.dZTQ1Zm', true);
-gtag('config', 'G-Q10NVB0HB9');
-</script> 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q10NVB0HB9"></script> 
   <!-- /Added by GoogleAnalytics4 integration --> 
   <link rel="canonical" href="../../../com/brandoptics/www/work.html"> 
@@ -151,7 +304,7 @@ gtag('config', 'G-Q10NVB0HB9');
   <meta name="generator" content="HubSpot">
  </head> 
  <main>
- 
+    
    <div class="cursor"> 
    <div class="cursor__circle"></div> 
   </div> 
@@ -302,279 +455,17 @@ gtag('config', 'G-Q10NVB0HB9');
                </div> 
                <section class="container portfolio " id="worklisting"> 
                 <div class="row" id="data-container"> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/meet-in-the-wild?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=1700&amp;height=1408&amp;name=Frame%201686560322.webp" alt="Frame 1686560322" loading="lazy" width="1700" height="1408" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=850&amp;height=704&amp;name=Frame%201686560322.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=1700&amp;height=1408&amp;name=Frame%201686560322.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=2550&amp;height=2112&amp;name=Frame%201686560322.webp 2550w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=3400&amp;height=2816&amp;name=Frame%201686560322.webp 3400w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=4250&amp;height=3520&amp;name=Frame%201686560322.webp 4250w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560322.webp?width=5100&amp;height=4224&amp;name=Frame%201686560322.webp 5100w" sizes="(max-width: 1700px) 100vw, 1700px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Meet in the wild</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/cyl?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=852&amp;height=704&amp;name=cyl.webp" alt="cyl" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=426&amp;height=352&amp;name=cyl.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=852&amp;height=704&amp;name=cyl.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=1278&amp;height=1056&amp;name=cyl.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=1704&amp;height=1408&amp;name=cyl.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=2130&amp;height=1760&amp;name=cyl.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/cyl.webp?width=2556&amp;height=2112&amp;name=cyl.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>CYL</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/xficient?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=850&amp;height=704&amp;name=xfcient.webp" alt="xfcient" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=425&amp;height=352&amp;name=xfcient.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=850&amp;height=704&amp;name=xfcient.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=1275&amp;height=1056&amp;name=xfcient.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=1700&amp;height=1408&amp;name=xfcient.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=2125&amp;height=1760&amp;name=xfcient.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/xfcient.webp?width=2550&amp;height=2112&amp;name=xfcient.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Xficient</h5> <p>Product Design</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/mount-up-media?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=852&amp;height=704&amp;name=mountupmedia.webp" alt="mountupmedia" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=426&amp;height=352&amp;name=mountupmedia.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=852&amp;height=704&amp;name=mountupmedia.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=1278&amp;height=1056&amp;name=mountupmedia.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=1704&amp;height=1408&amp;name=mountupmedia.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=2130&amp;height=1760&amp;name=mountupmedia.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/mountupmedia.webp?width=2556&amp;height=2112&amp;name=mountupmedia.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Mount Up Media</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/groove-control-studios?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=850&amp;height=704&amp;name=GSC.webp" alt="GSC" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=425&amp;height=352&amp;name=GSC.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=850&amp;height=704&amp;name=GSC.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=1275&amp;height=1056&amp;name=GSC.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=1700&amp;height=1408&amp;name=GSC.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=2125&amp;height=1760&amp;name=GSC.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/GSC.webp?width=2550&amp;height=2112&amp;name=GSC.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Groove Control Studio</h5> <p>Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/style-forward?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=850&amp;height=704&amp;name=styleforward.webp" alt="styleforward" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=425&amp;height=352&amp;name=styleforward.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=850&amp;height=704&amp;name=styleforward.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=1275&amp;height=1056&amp;name=styleforward.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=1700&amp;height=1408&amp;name=styleforward.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=2125&amp;height=1760&amp;name=styleforward.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/styleforward.webp?width=2550&amp;height=2112&amp;name=styleforward.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>STYL/FWRD</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/edgc?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=852&amp;height=704&amp;name=edgc-1.webp" alt="edgc-1" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=426&amp;height=352&amp;name=edgc-1.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=852&amp;height=704&amp;name=edgc-1.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=1278&amp;height=1056&amp;name=edgc-1.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=1704&amp;height=1408&amp;name=edgc-1.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=2130&amp;height=1760&amp;name=edgc-1.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/edgc-1.webp?width=2556&amp;height=2112&amp;name=edgc-1.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Live Relentless</h5> <p>Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/main-street-annex?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=852&amp;height=704&amp;name=mainstreet.webp" alt="mainstreet" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=426&amp;height=352&amp;name=mainstreet.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=852&amp;height=704&amp;name=mainstreet.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=1278&amp;height=1056&amp;name=mainstreet.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=1704&amp;height=1408&amp;name=mainstreet.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=2130&amp;height=1760&amp;name=mainstreet.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/mainstreet.webp?width=2556&amp;height=2112&amp;name=mainstreet.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>main Street Annex</h5> <p>Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/mck-restaurant?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=850&amp;height=704&amp;name=MCKrestuarant.webp" alt="MCKrestuarant" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=425&amp;height=352&amp;name=MCKrestuarant.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=850&amp;height=704&amp;name=MCKrestuarant.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=1275&amp;height=1056&amp;name=MCKrestuarant.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=1700&amp;height=1408&amp;name=MCKrestuarant.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=2125&amp;height=1760&amp;name=MCKrestuarant.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/MCKrestuarant.webp?width=2550&amp;height=2112&amp;name=MCKrestuarant.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>MCK</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/guardian-healthlink?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=850&amp;height=704&amp;name=guardianhealth.webp" alt="guardianhealth" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=425&amp;height=352&amp;name=guardianhealth.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=850&amp;height=704&amp;name=guardianhealth.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=1275&amp;height=1056&amp;name=guardianhealth.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=1700&amp;height=1408&amp;name=guardianhealth.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=2125&amp;height=1760&amp;name=guardianhealth.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/guardianhealth.webp?width=2550&amp;height=2112&amp;name=guardianhealth.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Guardian HealthLink</h5> <p>Digital Product, Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/market-by-winnies?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=850&amp;height=704&amp;name=winnies%20market.webp" alt="winnies market" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=425&amp;height=352&amp;name=winnies%20market.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=850&amp;height=704&amp;name=winnies%20market.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=1275&amp;height=1056&amp;name=winnies%20market.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=1700&amp;height=1408&amp;name=winnies%20market.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=2125&amp;height=1760&amp;name=winnies%20market.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/winnies%20market.webp?width=2550&amp;height=2112&amp;name=winnies%20market.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Market By Winnies</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/cs-kitchen?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=850&amp;height=704&amp;name=cskitchen.webp" alt="cskitchen" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=425&amp;height=352&amp;name=cskitchen.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=850&amp;height=704&amp;name=cskitchen.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=1275&amp;height=1056&amp;name=cskitchen.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=1700&amp;height=1408&amp;name=cskitchen.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=2125&amp;height=1760&amp;name=cskitchen.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/cskitchen.webp?width=2550&amp;height=2112&amp;name=cskitchen.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>CS Kitchen</h5> <p>Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/saf-salt?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=850&amp;height=704&amp;name=safsalt.webp" alt="safsalt" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=425&amp;height=352&amp;name=safsalt.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=850&amp;height=704&amp;name=safsalt.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=1275&amp;height=1056&amp;name=safsalt.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=1700&amp;height=1408&amp;name=safsalt.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=2125&amp;height=1760&amp;name=safsalt.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/safsalt.webp?width=2550&amp;height=2112&amp;name=safsalt.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>SafSalt</h5> <p>Website, Logo, Label</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/splish-naturals?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=850&amp;height=704&amp;name=splish.webp" alt="splish" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=425&amp;height=352&amp;name=splish.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=850&amp;height=704&amp;name=splish.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=1275&amp;height=1056&amp;name=splish.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=1700&amp;height=1408&amp;name=splish.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=2125&amp;height=1760&amp;name=splish.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/splish.webp?width=2550&amp;height=2112&amp;name=splish.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Splish Naturals</h5> <p>Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/emgenex?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=1302&amp;height=1072&amp;name=Frame%201686559932.webp" alt="Frame 1686559932" loading="lazy" width="1302" height="1072" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=651&amp;height=536&amp;name=Frame%201686559932.webp 651w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=1302&amp;height=1072&amp;name=Frame%201686559932.webp 1302w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=1953&amp;height=1608&amp;name=Frame%201686559932.webp 1953w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=2604&amp;height=2144&amp;name=Frame%201686559932.webp 2604w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=3255&amp;height=2680&amp;name=Frame%201686559932.webp 3255w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686559932.webp?width=3906&amp;height=3216&amp;name=Frame%201686559932.webp 3906w" sizes="(max-width: 1302px) 100vw, 1302px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Emgenex</h5> <p>Product Design</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/winnies-restaurant?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=850&amp;height=704&amp;name=winniesmanayunk.webp" alt="winniesmanayunk" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=425&amp;height=352&amp;name=winniesmanayunk.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=850&amp;height=704&amp;name=winniesmanayunk.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=1275&amp;height=1056&amp;name=winniesmanayunk.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=1700&amp;height=1408&amp;name=winniesmanayunk.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=2125&amp;height=1760&amp;name=winniesmanayunk.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/winniesmanayunk.webp?width=2550&amp;height=2112&amp;name=winniesmanayunk.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Winnie's</h5> <p>Website</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/twisted-gingers?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=852&amp;height=704&amp;name=twisted-b.webp" alt="twisted-b" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=426&amp;height=352&amp;name=twisted-b.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=852&amp;height=704&amp;name=twisted-b.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=1278&amp;height=1056&amp;name=twisted-b.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=1704&amp;height=1408&amp;name=twisted-b.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=2130&amp;height=1760&amp;name=twisted-b.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/twisted-b.webp?width=2556&amp;height=2112&amp;name=twisted-b.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Twisted Gingers</h5> <p>Media</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/studio-alchemy?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=852&amp;height=704&amp;name=Studio%20alchemy-1.webp" alt="Studio alchemy-1" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=426&amp;height=352&amp;name=Studio%20alchemy-1.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=852&amp;height=704&amp;name=Studio%20alchemy-1.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=1278&amp;height=1056&amp;name=Studio%20alchemy-1.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=1704&amp;height=1408&amp;name=Studio%20alchemy-1.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=2130&amp;height=1760&amp;name=Studio%20alchemy-1.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/Studio%20alchemy-1.webp?width=2556&amp;height=2112&amp;name=Studio%20alchemy-1.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Studio Alchemy</h5> <p>Website, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/esaradhi?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=852&amp;height=704&amp;name=esaradhi.webp" alt="esaradhi" loading="lazy" width="852" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=426&amp;height=352&amp;name=esaradhi.webp 426w, https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=852&amp;height=704&amp;name=esaradhi.webp 852w, https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=1278&amp;height=1056&amp;name=esaradhi.webp 1278w, https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=1704&amp;height=1408&amp;name=esaradhi.webp 1704w, https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=2130&amp;height=1760&amp;name=esaradhi.webp 2130w, https://www.brandoptics.com/hs-fs/hubfs/esaradhi.webp?width=2556&amp;height=2112&amp;name=esaradhi.webp 2556w" sizes="(max-width: 852px) 100vw, 852px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>eSaradhi</h5> <p>Digital Product, Logo</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/madabolic?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=1275&amp;height=1056&amp;name=Frame%201686560391%20(2).webp" alt="Frame 1686560391 (2)" loading="lazy" width="1275" height="1056" style="max-width: 100%;
-  height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=638&amp;height=528&amp;name=Frame%201686560391%20(2).webp 638w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=1275&amp;height=1056&amp;name=Frame%201686560391%20(2).webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=1913&amp;height=1584&amp;name=Frame%201686560391%20(2).webp 1913w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=2550&amp;height=2112&amp;name=Frame%201686560391%20(2).webp 2550w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=3188&amp;height=2640&amp;name=Frame%201686560391%20(2).webp 3188w, https://www.brandoptics.com/hs-fs/hubfs/Frame%201686560391%20(2).webp?width=3825&amp;height=3168&amp;name=Frame%201686560391%20(2).webp 3825w" sizes="(max-width: 1275px) 100vw, 1275px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Madabolic</h5> <p>Media</p> </a> 
-                  </div> 
-                 </div> 
-                 <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="p-one new-one realtive" data-aos="fade-up" data-aos-duration="2000"> 
-                   <a href="https://www.brandoptics.com/cheek?hsLang=en"> 
-                    <div class="image-container" cursor-class="arrow"> 
-                     <div class="reveal"> 
-                      <div class="image-wrap"> 
-                       <img class="w-100" src="https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=850&amp;height=704&amp;name=cheek.webp" alt="cheek" loading="lazy" width="850" height="704" style="max-width: 100%;
-    height: auto;" srcset="https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=425&amp;height=352&amp;name=cheek.webp 425w, https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=850&amp;height=704&amp;name=cheek.webp 850w, https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=1275&amp;height=1056&amp;name=cheek.webp 1275w, https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=1700&amp;height=1408&amp;name=cheek.webp 1700w, https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=2125&amp;height=1760&amp;name=cheek.webp 2125w, https://www.brandoptics.com/hs-fs/hubfs/cheek.webp?width=2550&amp;height=2112&amp;name=cheek.webp 2550w" sizes="(max-width: 850px) 100vw, 850px"> 
-                      </div> 
-                     </div> 
-                    </div> <h5>Cheek</h5> <p>Logo</p> </a> 
-                  </div> 
-                 </div> 
+                  {projects.map(project => (
+                      <Card
+                    link={project.link}
+                    imgSrc={project.imgSrc}
+                    imgAlt={project.imgAlt}
+                    imgWidth={project.imgWidth}
+                    imgHeight={project.imgHeight}
+                    heading={project.heading}
+                    description={project.description}
+                  />
+                  ))}
                 </div> 
                </section>
               </div> 

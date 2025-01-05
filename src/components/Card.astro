@@ -1,0 +1,46 @@
+---
+interface Props {
+  link: string;
+  imgSrc: string;
+  imgAlt: string;
+  imgWidth: number;
+  imgHeight: number;
+  heading: string;
+  description: string;
+}
+
+const {
+  link,
+  imgSrc,
+  imgAlt,
+  imgWidth,
+  imgHeight,
+  heading,
+  description,
+} = Astro.props;
+---
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="p-one new-one relative" data-aos="fade-up" data-aos-duration="2000">
+    <a href={link}>
+      <div class="image-container" cursor-class="arrow">
+        <div class="reveal">
+          <div class="image-wrap">
+            <img
+              class="w-100"
+              src={imgSrc}
+              alt={imgAlt}
+              loading="lazy"
+              width={imgWidth}
+              height={imgHeight}
+              style="max-width: 100%; height: auto;"
+              srcset={`${imgSrc}?width=${imgWidth / 2}&height=${imgHeight / 2} 850w, ${imgSrc} ${imgWidth}w`}
+              sizes="(max-width: 1700px) 100vw, 1700px"
+            />
+          </div>
+        </div>
+      </div>
+      <h5>{heading}</h5>
+      <p>{description}</p>
+    </a>
+  </div>
+</div>
